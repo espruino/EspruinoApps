@@ -1,7 +1,7 @@
-# App Name
+# Test app
 
-Describe the app...
+Use this to test your Espruino and its display.
 
 ## Usage
 
-Describe how to use it
+Type the text to be shown on the display into the "custom" dialog. Then upload.
