@@ -230,20 +230,6 @@
       {"name":".bootcde","url":"app.js"}
     ]
   }
-  
-  
-  { "id": "espAndLCDtest",
-  "name": "Espruino and LCD tester",
-  "icon": "icon.png",
-  "version":"0.05",
-  "description": "An app that shows text on the LCD and tests your espruinos functions.",
-  "tags": "",
-  "readme": "README.md",
-  "needsFeatures":["GRAPHICS"],
-  "storage": [
-    {"name":".bootcde","url":"app.js"}
-  ]
-}
 
 
 ]

@@ -1,7 +1,7 @@
-# Test app
+# App Name
 
-Use this to test your Espruino and its display.
+Describe the app...
 
 ## Usage
 
-Upload this and a ***"Your Espruino is working fine."*** text will apper on your Espruino LCD.
+Describe how to use it
