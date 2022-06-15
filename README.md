@@ -4,7 +4,7 @@ Espruino App Loader (and Apps)
 **THIS IS BETA:** We're still trying things out, so there isn't a great
 app selection and things are liable to change.
 
-[![Build Status](https://travis-ci.org/espruino/EspruinoApps.svg?branch=master)](https://travis-ci.org/espruino/EspruinoApps)
+[![Build Status](https://github.com/espruino/EspruinoApps/actions/workflows/nodejs.yml/badge.svg)](https://github.com/espruino/EspruinoApps/actions/workflows/nodejs.yml)
 
 <!-- * Try the **release version** at [espruino.com/apps](https://espruino.com/apps) -->
 * Try the **development version** at [github.io](https://espruino.github.io/EspruinoApps/)
