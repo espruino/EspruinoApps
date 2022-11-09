@@ -56,7 +56,7 @@
     "readme": "README.md",
     "needsFeatures":["BLE"],
     "storage": [
-      {"name":".bootcde","url":"app.js"}
+      {"name":".bootcde"}
     ]
   },
   { "id": "blescanner",
