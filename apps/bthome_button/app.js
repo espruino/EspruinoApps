@@ -24,7 +24,6 @@ function updateAdvertising(buttonState) {
     // not being connectable/scannable saves power (but you'll need to reboot to connect again with the IDE!)
     //connectable : false, scannable : false, 
   });
-  print(buttonState);
   /* After 60s, call updateAdvertising again to update battery/temp
   and to ensure we're advertising slowly */
   if (slowTimeout) clearTimeout(slowTimeout);
