@@ -253,5 +253,17 @@
   "storage": [
     {"name":".bootcde","url":"app.js"}
   ]
-}
+  },
+  { "id": "bthome_button",
+    "name": "BTHome button",
+    "icon": "icon.png",
+    "version":"0.01",
+    "description": "Turn your device into a BTHome/Home Assistant compatible button",
+    "tags": "bluetooth,homeassistant",
+    "readme": "README.md",
+    "needsFeatures":["BLE"],
+    "storage": [
+      {"name":".bootcde","url":"app.js"}
+    ]
+  }
 ]
