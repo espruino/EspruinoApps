@@ -4,6 +4,8 @@ On a Bluetooth LE device, this advertises temperature and battery in a [BTHome (
 
 When you press the button, a 'button event' will be advertised which can be used to trigger tasks in https://www.home-assistant.io/.
 
+It reports `press` for a short press, or `long_press` for pressing over 0.5s
+
 ## Usage
 
 Install the app and disconnect - no configuration is needed.

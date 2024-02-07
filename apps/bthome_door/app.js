@@ -2,8 +2,8 @@ if (E.getBattery===undefined)
   E.getBattery = ()=>100;
 
 var slowTimeout; //< After 60s we revert to slow advertising
-//https://www.espruino.com/BTHome
 
+// https://www.espruino.com/BTHome
 // Update the data we're advertising here
 function updateAdvertising(buttonState) {
   NRF.setAdvertising(require("BTHome").getAdvertisement([
@@ -17,11 +17,11 @@ function updateAdvertising(buttonState) {
     },
     {
       type: "button_event",
-      v: buttonState ? "press" : "none"
+      v: buttonState
     },
   ]), {
-    name : "Sensor",
-    interval: buttonState?20:2000, // fast when we have a button press, slow otherwise
+    name : "Door",
+    interval: (buttonState!="none")?20:2000, // fast when we have a button press, slow otherwise
     // not being connectable/scannable saves power (but you'll need to reboot to connect again with the IDE!)
     //connectable : false, scannable : false,
   });
@@ -30,17 +30,31 @@ function updateAdvertising(buttonState) {
   if (slowTimeout) clearTimeout(slowTimeout);
   slowTimeout = setTimeout(function() {
     slowTimeout = undefined;
-    updateAdvertising(false /* no button pressed */);
+    updateAdvertising("none" /* no button pressed */);
   }, 60000);
 }
 
-// When a button is pressed, update advertising with the event
-setWatch(function() {
-  updateAdvertising(true /* button pressed */);
-}, BTN, {edge:"rising", repeat:true})
-
 // Update advertising now
-updateAdvertising();
+updateAdvertising("none");
 
 // Enable highest power advertising (4 on nRF52, 8 on nRF52840)
 NRF.setTxPower(4);
+
+
+// https://www.espruino.com/Puck.js+Door+Light
+var zero = Puck.mag();
+var doorOpen = false;
+function onMag(p) {
+  p.x -= zero.x;
+  p.y -= zero.y;
+  p.z -= zero.z;
+  var s = Math.sqrt(p.x*p.x + p.y*p.y + p.z*p.z);
+  var open = s<1000;
+  if (open!=doorOpen) {
+    doorOpen = open;
+    digitalPulse(open ? LED1 : LED2, 1,1000);
+    updateAdvertising(open  ? "long_press" : "press");
+  }
+}
+Puck.on('mag', onMag);
+Puck.magOn();

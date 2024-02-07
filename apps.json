@@ -257,11 +257,23 @@
   { "id": "bthome_button",
     "name": "BTHome button",
     "icon": "icon.png",
-    "version":"0.01",
+    "version":"0.02",
     "description": "Turn your device into a BTHome/Home Assistant compatible button",
     "tags": "bluetooth,homeassistant",
     "readme": "README.md",
     "needsFeatures":["BLE"],
+    "storage": [
+      {"name":".bootcde","url":"app.js"}
+    ]
+  },
+  { "id": "bthome_door",
+    "name": "BTHome Door Sensor",
+    "icon": "icon.png",
+    "version":"0.01",
+    "description": "Turn your Puck.js into a BTHome/Home Assistant compatible door open detector",
+    "tags": "bluetooth,homeassistant,door",
+    "readme": "README.md",
+    "needsFeatures":["BLE","MAG"],
     "storage": [
       {"name":".bootcde","url":"app.js"}
     ]
