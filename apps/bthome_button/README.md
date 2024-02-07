@@ -6,6 +6,8 @@ When you press the button, a 'button event' will be advertised which can be used
 
 It reports `press` for a short press, or `long_press` for pressing over 0.5s
 
+This is based on https://www.espruino.com/BTHome
+
 ## Usage
 
 Install the app and disconnect - no configuration is needed.
