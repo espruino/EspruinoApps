@@ -255,7 +255,7 @@
     ]
   },
   { "id": "bthome_button",
-    "name": "BTHome button",
+    "name": "BTHome Button",
     "icon": "icon.png",
     "version":"0.02",
     "description": "Turn your device into a BTHome/Home Assistant compatible button",
