@@ -277,5 +277,17 @@
     "storage": [
       {"name":".bootcde","url":"app.js"}
     ]
+  },
+  { "id": "knobbutton",
+    "name": "Knob Button",
+    "icon": "icon.png",
+    "version":"0.01",
+    "description": "Use the Puck.js (v2) as an anywhere knob: push the button to transmit the angle of rotation in BLE advertising packets.",
+    "tags": "bluetooth",
+    "readme": "README.md",
+    "needsFeatures":["BLE","ACCEL"],
+    "storage": [
+      {"name":".bootcde","url":"app.js"}
+    ]
   }
 ]
