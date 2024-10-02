@@ -278,6 +278,18 @@
       {"name":".bootcde","url":"app.js"}
     ]
   },
+  { "id": "bthome_energy",
+    "name": "BTHome Energy Monitor",
+    "icon": "icon.png",
+    "version":"0.01",
+    "description": "Turn your Espruino device into a BTHome/Home Assistant compatible energy monitor by sensing flashes from your electricty meter (needs an LDR wired between D1 and D2)",
+    "tags": "bluetooth,homeassistant,energy,power,electricity",
+    "readme": "README.md",
+    "needsFeatures":["BLE"],
+    "storage": [
+      {"name":".bootcde","url":"app.js"}
+    ]
+  },
   { "id": "knobbutton",
     "name": "Knob Button",
     "icon": "icon.png",
