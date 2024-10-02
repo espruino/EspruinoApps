@@ -290,6 +290,18 @@
       {"name":".bootcde","url":"app.js"}
     ]
   },
+  { "id": "ha_led",
+    "name": "Home Assistant Bluetooth LED",
+    "icon": "icon.png",
+    "version":"0.01",
+    "description": "Turn your Bluetooth Espruino device into a LED that can be controlled from Home assistant",
+    "tags": "bluetooth,homeassistant,LED",
+    "readme": "README.md",
+    "needsFeatures":["BLE","RGBLED"],
+    "storage": [
+      {"name":".bootcde","url":"app.js"}
+    ]
+  },
   { "id": "knobbutton",
     "name": "Knob Button",
     "icon": "icon.png",
