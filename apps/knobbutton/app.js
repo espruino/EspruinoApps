@@ -45,10 +45,10 @@ function calculateAngleOfRotation(acc) {
 // Advertise the name "Knob.js"
 function advertiseName() {
   NRF.setAdvertising({}, {
-      showName: false,
-      manufacturer: 0x0590,
-      manufacturerData: JSON.stringify({ name: "Knob.js" }),
-      interval: NAME_ADVERTISING_PERIOD_MILLISECONDS
+    showName: false,
+    manufacturer: 0x0590,
+    manufacturerData: JSON.stringify({ name: "Knob.js" }),
+    interval: NAME_ADVERTISING_PERIOD_MILLISECONDS
   });
 }
 
@@ -60,14 +60,14 @@ function advertiseAngleOfRotation(angleOfRotation) {
   }
 
   NRF.setAdvertising({}, {
-      showName: false,
-      manufacturer: 0x0590,
-      manufacturerData: JSON.stringify({ angleOfRotation: angleOfRotation }),
-      interval: ANGLE_ADVERTISING_PERIOD_MILLISECONDS
+    showName: false,
+    manufacturer: 0x0590,
+    manufacturerData: JSON.stringify({ angleOfRotation: angleOfRotation }),
+    interval: ANGLE_ADVERTISING_PERIOD_MILLISECONDS
   });
 
   advertisingTimeoutId = setTimeout(advertiseName,
-                                    ANGLE_ADVERTISING_DURATION_MILLISECONDS);
+    ANGLE_ADVERTISING_DURATION_MILLISECONDS);
 }
 
 
