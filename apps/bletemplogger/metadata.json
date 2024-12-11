@@ -1,0 +1,18 @@
+{
+  "id": "bletemplogger",
+  "name": "Bluetooth Temperature Logger",
+  "icon": "icon.png",
+  "version": "0.02",
+  "description": "Log temperature every half hour. Connect again, choose 'My Apps', then 'Upload', and view the data.",
+  "tags": "bluetooth",
+  "needsFeatures": [
+    "BLE"
+  ],
+  "interface": "interface.html",
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

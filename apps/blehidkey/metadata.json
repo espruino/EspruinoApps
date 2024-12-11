@@ -1,0 +1,18 @@
+{
+  "id": "blehidkey",
+  "name": "Bluetooth HID key",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Make device appear as a HID keyboard. When BTN1 is pressed send Enter",
+  "tags": "bluetooth",
+  "needsFeatures": [
+    "BLE",
+    "BLEHID"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

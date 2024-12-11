@@ -1,0 +1,18 @@
+{
+  "id": "blescanner",
+  "name": "Bluetooth Scanner",
+  "icon": "icon.png",
+  "version": "0.02",
+  "description": "Scans for Bluetooth LE devices and shows their names on the screen",
+  "tags": "bluetooth",
+  "needsFeatures": [
+    "BLE",
+    "GRAPHICS"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "nfcurl",
+  "name": "NFC URL",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Configure your Espruino device with a specific URL",
+  "tags": "nfc,tool",
+  "custom": "custom.html",
+  "needsFeatures": [
+    "NFC"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde"
+    }
+  ]
+}

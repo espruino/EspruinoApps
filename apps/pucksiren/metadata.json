@@ -1,0 +1,18 @@
+{
+  "id": "pucksiren",
+  "name": "Puck.js Siren",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Attach LEDs and speaker as in http://www.espruino.com/Puck.js+Duplo+Siren, upload this code and your Puck will flash the lights and make sound whenever moved!",
+  "tags": "",
+  "needsFeatures": [
+    "BLE",
+    "ACCEL"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

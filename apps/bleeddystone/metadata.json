@@ -1,0 +1,17 @@
+{
+  "id": "bleeddystone",
+  "name": "Bluetooth Eddystone Beacon",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Configure your device to be an [Eddystone beacon](https://github.com/google/eddystone)",
+  "tags": "bluetooth",
+  "custom": "custom.html",
+  "needsFeatures": [
+    "BLE"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde"
+    }
+  ]
+}

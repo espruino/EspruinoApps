@@ -1,0 +1,20 @@
+{
+  "id": "puckrotate",
+  "name": "Puck.js rotation advertising",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Uses Puck.js to detect rotation, and advertises it over Bluetooth as JSON",
+  "tags": "bluetooth",
+  "readme": "README.md",
+  "needsFeatures": [
+    "BLE",
+    "GYRO",
+    "ACCEL"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

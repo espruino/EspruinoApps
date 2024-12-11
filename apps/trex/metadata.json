@@ -1,0 +1,17 @@
+{
+  "id": "trex",
+  "name": "T-Rex (Dinosaur game)",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "T-Rex game in the style of Chrome's offline game",
+  "tags": "game",
+  "needsFeatures": [
+    "GRAPHICS"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

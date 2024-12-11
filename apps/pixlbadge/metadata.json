@@ -1,0 +1,23 @@
+{
+  "id": "pixlbadge",
+  "name": "Pixl.js Badge",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Programs a [Pixl.js](http://www.espruino.com/Pixl.js) to display your name, the time, and to include Flappy Bird and T-Rex games.",
+  "tags": "bluetooth,nfc",
+  "custom": "custom.html",
+  "needsFeatures": [
+    "BLE",
+    "NFC",
+    "GRAPHICS"
+  ],
+  "storage": [
+    {
+      "name": ".boot0"
+    },
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}

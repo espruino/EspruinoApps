@@ -1,0 +1,14 @@
+{
+  "id": "simpletimer",
+  "name": "Countdown Timer",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Count down from a predefined time. Either displays the countdown on the display, or flashes LEDs to show coundown state. BTN1 starts & stops.",
+  "tags": "clock",
+  "custom": "custom.html",
+  "storage": [
+    {
+      "name": ".bootcde"
+    }
+  ]
+}
