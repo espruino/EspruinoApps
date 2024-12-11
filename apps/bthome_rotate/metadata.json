@@ -1,0 +1,19 @@
+{
+  "id": "bthome_rotate",
+  "name": "BTHome Rotation Sensor",
+  "icon": "icon.png",
+  "version": "0.01",
+  "description": "Turn your Puck.js into a BTHome/Home Assistant compatible angle/rotation sensor",
+  "tags": "bluetooth,homeassistant,angle,rotation",
+  "readme": "README.md",
+  "needsFeatures": [
+    "BLE",
+    "ACCEL"
+  ],
+  "storage": [
+    {
+      "name": ".bootcde",
+      "url": "app.js"
+    }
+  ]
+}
