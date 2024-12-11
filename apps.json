@@ -283,9 +283,21 @@
     "icon": "icon.png",
     "version":"0.01",
     "description": "Turn your Espruino device into a BTHome/Home Assistant compatible energy monitor by sensing flashes from your electricty meter (needs an LDR wired between D1 and D2)",
-    "tags": "bluetooth,homeassistant,energy,power,electricity",
+    "tags": "bluetooth,homeassistant,energy,power,electricity,sensor",
     "readme": "README.md",
     "needsFeatures":["BLE"],
+    "storage": [
+      {"name":".bootcde","url":"app.js"}
+    ]
+  },
+  { "id": "bthome_vibration",
+    "name": "BTHome Vibration Sensor",
+    "icon": "icon.png",
+    "version":"0.01",
+    "description": "Turn your Puck.js into a BTHome/Home Assistant compatible vibration/movement sensor. When it moves, it'll send that information as a BTHome packet which will then appear in HomeAssistant.",
+    "tags": "bluetooth,homeassistant,vibration,movement,sensor",
+    "readme": "README.md",
+    "needsFeatures":["BLE","ACCEL"],
     "storage": [
       {"name":".bootcde","url":"app.js"}
     ]
