@@ -22,9 +22,12 @@ This is a cut-down version of what's used in https://banglejs.com/apps
 for Bangle.js apps, so much of the advice in https://github.com/espruino/BangleApps/blob/master/README.md
 applies.
 
-**However** because we're only handling one app at a time, we don't write the app
+## Differences to banglejs.com/apps
+
+* We're only handling one app at a time so we don't write the app
 into a file called `appid.app.js`, but instead into `.bootcde` which is the file
 that the Espruino writes into when writing "To Flash" (for more info see https://www.espruino.com/Saving)
+* We also don't have a launcher, so don't need to provide any 'JS' formatted images for apps
 
 ## Credits
 
