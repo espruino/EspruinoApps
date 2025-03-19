@@ -1,5 +1,5 @@
-/* BLE debug info */
-Puck.debug = 3;
+/* debug info */
+//UART.debug = 3;
 /* Are we only putting a single app on a device? If so
 apps should all be saved as .bootcde and we write info
 about the current app into app.info */
@@ -72,18 +72,14 @@ window.addEventListener('load', (event) => {
     <div class="column col-4 col-xs-6">
       <div class="card devicechooser" deviceid="${d.id}">
         <div class="card-header">
-          <div class="card-title h5">${d.name}</div>
+          <div class="card-title h6">${d.name}</div>
           <!--<div class="card-subtitle text-gray">...</div>-->
         </div>
-        <div class="card-image">
-          <img src="${d.img}" alt="${d.name}" class="img-responsive">
+        <div class="card-image" style="align:center">
+          <img src="${d.img}" alt="${d.name}" class="img-responsive" style="margin-left: auto; margin-right: auto;">
         </div>
       </div>
     </div>`).join("\n")}
-  </div><div class="columns">
-    <div class="column col-12 text-center">
-      <p><a href="https://www.espruino.com/Order" target="_blank">Non-Bluetooth Espruino Devices</a> will be added soon.</p>
-    </div>
   </div>`;
   showPrompt("Which device?",html,{},false);
   htmlToArray(document.querySelectorAll(".devicechooser")).forEach(button => {
