@@ -21,6 +21,7 @@ function updateAdvertising(buttonState) {
     },
   ]), {
     name : "Sensor",
+    manufacturer : false, ///< turn off manufacturer data advertising (enabled by default in 2v26, interferes with BTHome)
     interval: buttonState?100:2000, // fast when we have a button press, slow otherwise
     // not being connectable/scannable saves power (but you'll need to reboot to connect again with the IDE!)
     //connectable : false, scannable : false,

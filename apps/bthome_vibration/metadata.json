@@ -2,7 +2,7 @@
   "id": "bthome_vibration",
   "name": "BTHome Vibration Sensor",
   "icon": "icon.png",
-  "version": "0.01",
+  "version": "0.02",
   "description": "Turn your Puck.js into a BTHome/Home Assistant compatible vibration/movement sensor. When it moves, it'll send that information as a BTHome packet which will then appear in HomeAssistant.",
   "tags": "bluetooth,homeassistant,vibration,movement,sensor",
   "readme": "README.md",

@@ -2,7 +2,7 @@
   "id": "bthome_door",
   "name": "BTHome Door Sensor",
   "icon": "icon.png",
-  "version": "0.01",
+  "version": "0.02",
   "description": "Turn your Puck.js into a BTHome/Home Assistant compatible door open detector",
   "tags": "bluetooth,homeassistant,door",
   "readme": "README.md",

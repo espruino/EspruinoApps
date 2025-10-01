@@ -1,2 +1,3 @@
 0.01: New App!
 0.02: Handle long/short press
+0.03: Disable manufacturer data (enabled in 2v26, BTHome/HomeAssistant appears to have a bug that causes problems)
